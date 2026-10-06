@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HITMS Admission Form</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="../resources/university-logo.png"
+             alt="HITMS University Logo"
+             width="120">
+
+        <h1>HITMS Admission Application</h1>
+
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="admission.html">Admission Form</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section>
+            <h2>Online Admission Form</h2>
+
+            <p>
+                Please enter your information carefully in the form below.
+                Fields marked with * are required.
+            </p>
+        </section>
+
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <p>
+                    <label for="fullname">Full Name *</label><br>
+                    <input type="text"
+                           id="fullname"
+                           name="fullname"
+                           required>
+                </p>
+
+                <p>
+                    <label for="fathername">Father's Name *</label><br>
+                    <input type="text"
+                           id="fathername"
+                           name="fathername"
+                           required>
+                </p>
+
+                <p>
+                    <label for="cnic">CNIC / B-Form *</label><br>
+                    <input type="text"
+                           id="cnic"
+                           name="cnic"
+                           placeholder="Enter CNIC or B-Form number"
+                           required>
+                </p>
+
+                <p>
+                    <label for="dob">Date of Birth *</label><br>
+                    <input type="date"
+                           id="dob"
+                           name="dob"
+                           required>
+                </p>
+
+                <p>
+                    <label>Gender *</label><br>
+
+                    <input type="radio"
+                           id="male"
+                           name="gender"
+                           value="Male"
+                           required>
+                    <label for="male">Male</label>
+
+                    <input type="radio"
+                           id="female"
+                           name="gender"
+                           value="Female">
+                    <label for="female">Female</label>
+
+                    <input type="radio"
+                           id="other"
+                           name="gender"
+                           value="Other">
+                    <label for="other">Other</label>
+                </p>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <p>
+                    <label for="email">Email Address *</label><br>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           required>
+                </p>
+
+                <p>
+                    <label for="phone">Phone Number *</label><br>
+                    <input type="tel"
+                           id="phone"
+                           name="phone"
+                           placeholder="+92XXXXXXXXXX"
+                           required>
+                </p>
+
+                <p>
+                    <label for="address">Home Address *</label><br>
+                    <textarea id="address"
+                              name="address"
+                              rows="4"
+                              cols="40"
+                              required></textarea>
+                </p>
+
+                <p>
+                    <label for="city">City *</label><br>
+                    <input type="text"
+                           id="city"
+                           name="city"
+                           value="Hyderabad"
+                           required>
+                </p>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Academic Information</legend>
+
+                <p>
+                    <label for="qualification">Highest Qualification *</label><br>
+
+                    <select id="qualification"
+                            name="qualification"
+                            required>
+
+                        <option value="">-- Select Qualification --</option>
+                        <option value="HSC Pre-Engineering">HSC Pre-Engineering</option>
+                        <option value="HSC Computer Science">HSC Computer Science</option>
+                        <option value="HSC Pre-Medical">HSC Pre-Medical</option>
+                        <option value="Equivalent">Equivalent Qualification</option>
+
+                    </select>
+                </p>
+
+                <p>
+                    <label for="marks">Intermediate Percentage *</label><br>
+                    <input type="number"
+                           id="marks"
+                           name="marks"
+                           min="0"
+                           max="100"
+                           step="0.01"
+                           required>
+                </p>
+
+                <p>
+                    <label for="program">Select Program *</label><br>
+
+                    <select id="program"
+                            name="program"
+                            required>
+
+                        <option value="">-- Select Program --</option>
+                        <option value="BS Computer Science">
+                            BS Computer Science
+                        </option>
+
+                        <option value="BS Software Engineering">
+                            BS Software Engineering
+                        </option>
+
+                        <option value="BS FinTech">
+                            BS FinTech
+                        </option>
+
+                        <option value="BS Cyber Security">
+                            BS Cyber Security
+                        </option>
+
+                        <option value="BS AI and Robotics">
+                            BS AI &amp; Robotics
+                        </option>
+
+                        <option value="BS Data Science">
+                            BS Data Science
+                        </option>
+
+                        <option value="BS Information Technology">
+                            BS Information Technology
+                        </option>
+
+                    </select>
+                </p>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Documents</legend>
+
+                <p>
+                    <label for="photo">Upload Passport-Size Photograph *</label><br>
+                    <input type="file"
+                           id="photo"
+                           name="photo"
+                           accept="image/*"
+                           required>
+                </p>
+
+                <p>
+                    <label for="marksheet">Upload Marks Certificate *</label><br>
+                    <input type="file"
+                           id="marksheet"
+                           name="marksheet"
+                           accept=".pdf,image/*"
+                           required>
+                </p>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Declaration</legend>
+
+                <p>
+                    <input type="checkbox"
+                           id="declaration"
+                           name="declaration"
+                           required>
+
+                    <label for="declaration">
+                        I declare that the information provided by me is
+                        correct and complete. *
+                    </label>
+                </p>
+            </fieldset>
+
+            <br>
+
+            <input type="submit" value="Submit Application">
+            <input type="reset" value="Clear Form">
+
+        </form>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>
+            HITMS Admission Office | Phone: 022 3823752 |
+            Email: admissions@hitms.edu.pk
+        </p>
+
+        <p>
+            &copy; 2026 HITMS Admission System - Academic Project
+        </p>
+    </footer>
+
+</body>
+</html>
